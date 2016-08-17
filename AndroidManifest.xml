@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.xiaoke.accountsoft.activity"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application android:icon="@drawable/appicon" android:label="@string/app_name">
+        <activity android:name="accountsoft.activity.Login"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="accountsoft.activity.MainActivity"
+                  android:label="@string/app_name">
+        </activity>
+		<activity  android:name="accountsoft.activity.AddOutaccount"
+			android:label="@string/addoutaccount">
+		</activity>
+		<activity  android:name="accountsoft.activity.AddInaccount"
+			android:label="@string/addinaccount">
+		</activity>
+		<activity  android:name="accountsoft.activity.Outaccountinfo"
+			android:label="@string/outaccountinfo">
+		</activity>
+		<activity  android:name="accountsoft.activity.Inaccountinfo"
+			android:label="@string/inaccountinfo">
+		</activity>
+		<activity  android:name="accountsoft.activity.Showinfo"
+			android:label="@string/showinfo">
+		</activity>
+		<activity  android:name="accountsoft.activity.Sysset"
+			android:label="@string/sysset">
+		</activity>
+		<activity  android:name="accountsoft.activity.Accountflag"
+			android:label="@string/accountflag">
+		</activity>
+		<activity  android:name="accountsoft.activity.InfoManage"
+			android:label="@string/infomanage">
+		</activity>
+		<activity  android:name="accountsoft.activity.FlagManage"
+			android:label="@string/flagmanage">
+		</activity>
+    </application>
+</manifest>
