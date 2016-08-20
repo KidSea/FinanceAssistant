@@ -28,7 +28,7 @@ public class Outaccountinfo extends Activity {
 		setContentView(R.layout.outaccountinfo);// 设置布局文件
 		lvinfo = (ListView) findViewById(R.id.lvoutaccountinfo);// 获取布局文件中的ListView组件
 
-		ShowInfo(R.id.btnoutinfo);// 调用自定义方法显示支出信息
+		ShowInfo(R.id.it_outcome);// 调用自定义方法显示支出信息
 
 		lvinfo.setOnItemClickListener(new OnItemClickListener()// 为ListView添加项单击事件
 		{
@@ -49,7 +49,7 @@ public class Outaccountinfo extends Activity {
 	private void ShowInfo(int intType) {// 用来根据传入的管理类型，显示相应的信息
 		String[] strInfos = null;// 定义字符串数组，用来存储支出信息
 		ArrayAdapter<String> arrayAdapter = null;// 创建ArrayAdapter对象
-		strType = "btnoutinfo";// 为strType变量赋值
+		strType = "it_outcome";// 为strType变量赋值
 		OutaccountDAO outaccountinfo = new OutaccountDAO(Outaccountinfo.this);// 创建OutaccountDAO对象
 		// 获取所有支出信息，并存储到List泛型集合中
 		List<Tb_outaccount> listoutinfos = outaccountinfo.getScrollData(0,
@@ -73,6 +73,6 @@ public class Outaccountinfo extends Activity {
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();// 实现基类中的方法
-		ShowInfo(R.id.btnoutinfo);// 显示收入信息
+		ShowInfo(R.id.it_outcome);// 显示收入信息
 	}
 }

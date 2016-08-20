@@ -58,7 +58,7 @@ public class InfoManage extends Activity {
 		strInfos = bundle.getStringArray(Showinfo.FLAG);// 获取Bundle中记录的信息
 		strid = strInfos[0];// 记录id
 		strType = strInfos[1];// 记录类型
-		if (strType.equals("btnoutinfo"))// 如果类型是btnoutinfo
+		if (strType.equals("it_outcome"))// 如果类型是btnoutinfo
 		{
 			tvtitle.setText("支出管理");// 设置标题为“支出管理”
 			textView.setText("地  点：");// 设置“地点/付款方”标签文本为“地 点：”
@@ -70,7 +70,7 @@ public class InfoManage extends Activity {
 			spType.setPrompt(tb_outaccount.getType());// 显示类别
 			txtHA.setText(tb_outaccount.getAddress());// 显示地点
 			txtMark.setText(tb_outaccount.getMark());// 显示备注
-		} else if (strType.equals("btnininfo"))// 如果类型是btnininfo
+		} else if (strType.equals("it_income"))// 如果类型是btnininfo
 		{
 			tvtitle.setText("收入管理");// 设置标题为“收入管理”
 			textView.setText("付款方：");// 设置“地点/付款方”标签文本为“付款方：”
@@ -96,7 +96,7 @@ public class InfoManage extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				if (strType.equals("btnoutinfo"))// 判断类型如果是btnoutinfo
+				if (strType.equals("it_outcome"))// 判断类型如果是btnoutinfo
 				{
 					Tb_outaccount tb_outaccount = new Tb_outaccount();// 创建Tb_outaccount对象
 					tb_outaccount.setid(Integer.parseInt(strid));// 设置编号
@@ -107,7 +107,7 @@ public class InfoManage extends Activity {
 					tb_outaccount.setAddress(txtHA.getText().toString());// 设置地点
 					tb_outaccount.setMark(txtMark.getText().toString());// 设置备注
 					outaccountDAO.update(tb_outaccount);// 更新支出信息
-				} else if (strType.equals("btnininfo"))// 判断类型如果是btnininfo
+				} else if (strType.equals("it_income"))// 判断类型如果是btnininfo
 				{
 					Tb_inaccount tb_inaccount = new Tb_inaccount();// 创建Tb_inaccount对象
 					tb_inaccount.setid(Integer.parseInt(strid));// 设置编号
@@ -129,10 +129,10 @@ public class InfoManage extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				if (strType.equals("btnoutinfo"))// 判断类型如果是btnoutinfo
+				if (strType.equals("it_outcome"))// 判断类型如果是btnoutinfo
 				{
 					outaccountDAO.detele(Integer.parseInt(strid));// 根据编号删除支出信息
-				} else if (strType.equals("btnininfo"))// 判断类型如果是btnininfo
+				} else if (strType.equals("it_income"))// 判断类型如果是btnininfo
 				{
 					inaccountDAO.detele(Integer.parseInt(strid));// 根据编号删除收入信息
 				}

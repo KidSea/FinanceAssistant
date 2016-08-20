@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main">理财小助手</string>
-    <string name="app_name">理财小助手</string>
+
+    <string name="main">理财小帮手</string>
+    <string name="app_name">理财小帮手</string>
     <string name="login">系统登录</string>
     <string name="addoutaccount">新增支出</string>
     <string name="addinaccount">新增收入</string>
@@ -12,4 +13,9 @@
     <string name="accountflag">收支便签</string>
     <string name="infomanage">收支管理</string>
     <string name="flagmanage">便签管理</string>
+    <string name="showall">全部信息</string>
+    <string name="outcome">支出信息</string>
+    <string name="income">收入信息</string>
+    <string name="flag">便签信息</string>
+
 </resources>

@@ -85,7 +85,7 @@ public class AddInaccount extends Activity {
 						txtInMoney.setText("");// 设置金额文本框为空
 						txtInMoney.setHint("0.00");// 为金额文本框设置提示
 						txtInTime.setText("");// 设置时间文本框为空
-						txtInTime.setHint("2011-01-01");// 为时间文本框设置提示
+						txtInTime.setHint("2016-01-01");// 为时间文本框设置提示
 						txtInHandler.setText("");// 设置付款方文本框为空
 						txtInMark.setText("");// 设置备注文本框为空
 						spInType.setSelection(0);// 设置类别下拉列表默认选择第一项

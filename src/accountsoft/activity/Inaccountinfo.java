@@ -28,7 +28,7 @@ public class Inaccountinfo extends Activity {
 		setContentView(R.layout.inaccountinfo);// 设置布局文件
 		lvinfo = (ListView) findViewById(R.id.lvinaccountinfo);// 获取布局文件中的ListView组件
 
-		ShowInfo(R.id.btnininfo);// 调用自定义方法显示收入信息
+		ShowInfo(R.id.it_income);// 调用自定义方法显示收入信息
 
 		lvinfo.setOnItemClickListener(new OnItemClickListener()// 为ListView添加项单击事件
 		{
@@ -48,7 +48,7 @@ public class Inaccountinfo extends Activity {
 	private void ShowInfo(int intType) {// 用来根据传入的管理类型，显示相应的信息
 		String[] strInfos = null;// 定义字符串数组，用来存储收入信息
 		ArrayAdapter<String> arrayAdapter = null;// 创建ArrayAdapter对象
-		strType = "btnininfo";// 为strType变量赋值
+		strType = "it_income";// 为strType变量赋值
 		InaccountDAO inaccountinfo = new InaccountDAO(Inaccountinfo.this);// 创建InaccountDAO对象
 		// 获取所有收入信息，并存储到List泛型集合中
 		List<Tb_inaccount> listinfos = inaccountinfo.getScrollData(0,
@@ -72,6 +72,6 @@ public class Inaccountinfo extends Activity {
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();// 实现基类中的方法
-		ShowInfo(R.id.btnininfo);// 显示收入信息
+		ShowInfo(R.id.it_income);// 显示收入信息
 	}
 }

@@ -5,17 +5,19 @@
       android:versionName="1.0">
     <uses-sdk android:minSdkVersion="15" />
 
-    <application android:icon="@drawable/appicon" android:label="@string/app_name">
-        <activity android:name="accountsoft.activity.Login"
-                  android:label="@string/app_name">
+    <application android:icon="@drawable/appicon" 
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light"
+        >
+        <activity
+            android:name="accountsoft.activity.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="accountsoft.activity.MainActivity"
-                  android:label="@string/app_name">
-        </activity>
+
 		<activity  android:name="accountsoft.activity.AddOutaccount"
 			android:label="@string/addoutaccount">
 		</activity>

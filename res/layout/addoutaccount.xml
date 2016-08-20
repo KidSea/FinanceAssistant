@@ -46,8 +46,8 @@
 		    android:layout_width="210dp"
 		    android:layout_height="wrap_content"
 		    android:layout_toRightOf="@id/tvMoney"
-		    android:inputType="number"
-		    android:numeric="integer"
+		    android:inputType="numberDecimal"
+		    android:numeric="decimal"
 		    android:maxLength="9"
 		    android:hint="0.00"
 		    />
